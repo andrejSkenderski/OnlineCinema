@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "About Cinema Lorem Ipsum";
+}
+<head>
+    <style>
+        .bg {
+            background: url(/Media/background.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            color: white
+        }
+
+        img {
+            border-radius: 30%;
+        }
+    </style>
+</head>
+<body class="bg">
+    <img src="~/Media/bg.jpg" style="position:absolute; height:50vh;" />
+    <div style="        z-index: 100;
+        position: absolute;
+        right:180px;
+        height:90vh;
+        display:flex;
+        justify-content:center;
+        align-items:flex-start;
+        flex-direction:column;
+">
+        <h2>@ViewBag.Title.</h2>
+        <h3>@ViewBag.Message</h3>
+    </div>
+
+    </body>
+    @*<p>Use this area to provide additional information.</p>*@
